@@ -8,3 +8,118 @@ red - #ee5253
 
 */
 
+* {
+  /* border: solid 1px green; */
+  font-family: 'Roboto', sans-serif;
+  font: bold;
+
+}
+
+body {
+  /* background: url(assets/burger-friends.jpg) no-repeat; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 50%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+
+
+.button-add-recipe {
+  height: 33px;
+  border-radius: 5px;
+  
+}
+
+.button-lets-cook {
+  height: 34px;
+  width: 168px;
+  border-radius: 5px;
+  background-color: #0fb9b1;
+  margin: 10px;
+}
+
+
+.content-box {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  opacity: 80%;
+  height: 548px;
+  width: 710px;
+  align-items: center;
+
+}
+
+
+.content-container {
+  display:flex;
+  justify-content: space-around;
+  /* flex-direction: row; */
+  /* align-items: center; */
+  /* padding: 90px; */
+  margin: 87px;
+}
+
+
+.input {
+  display: flex;
+  align-items: left;
+  /* justify-content: top; */
+  flex-direction: column;
+  padding: 39px;
+  height: 433px;
+  width: 433px;
+  
+}
+
+  .input-label-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding: 11px;
+  
+
+}
+
+
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0fb9b1;
+  padding: 12px;
+  height: 41px
+  
+}
+
+
+
+.pot {
+  height: 147px;
+  width: 147px;
+}
+
+.radio-container {
+  display: flex;
+  flex-direction: column;
+  padding: 6px
+
+}
+
+.required:after {
+  content:" *";
+  color: red;
+}
+
+.box2 {
+  justify-content: left;
+  /* padding: 55px; */
+}
+
+h1 {
+ font-size: 34px ;
+}

@@ -1,10 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
 <html>
   <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What's For Dinner?</title>
     <link rel="stylesheet" href="./styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
   </head>
-  <body>
-    
+  <body background="assets/burger-friends.jpg">
+      <nav class="navBar">
+        <h2 id="header">What's for Dinner?</h2>
+        <button class="button-add-recipe">ADD A RECIPE</button>
+      </nav>
+      <div class="content-container">
+        <section class="content-box box2">
+          <form class="input">
+            <h1 class="required"> What are you looking for?</h1>
+           
+            <div class="radio-container">
+              <div class="input-label-container">
+
+                <input class="radio-button" type="radio" name="food" value="side"/>
+                <label>Side</label>
+              </div>
+              <div class="input-label-container">
+                <input class="radio-button" type="radio" name="food" value="Main Dish"/>
+                <label>Main Dish</label>
+            </div>
+            <div class="input-label-container">
+              <input class="radio-button" type="radio" name="food" value="Dessert"/>
+              <label>Dessert</label>
+            </div>
+            <div class="input-label-container">
+              <input class="radio-button" type="radio" name="food" value="Entire Meal"/>
+              <label>Entire Meal</label>
+            </div>
+              <button class="button-lets-cook">LET'S COOK</button>
+            </div>
+          </form>
+        </section>
+        <section class="content-box">
+          <img class="pot" src="assets/cookpot.svg"/>
+        </section>
+    </div>
   </body>
   <script type="text/javascript" src="main.js"></script>
 </html>
+
+<!-- // 1. Apply burger background to the body using CSS. (look into specifying path of the image and use backgroumnd property in css and tell that it's a cover)
+// 2. Add a nav bar at the top of the page.
+//    Add a button "add recipie".
+      Add title what's cooking
+      Wrap both items in a flex box for formatting.
+     Add a section that will contain a form of radio buttons and let's cook 
+Add an adjacent section to contain the cookpot.svg by default but when the user adds 
+a selection hide the cookpot and display a header that says "you should make: " followed by food group.
+
+    
+    -->
