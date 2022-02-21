@@ -18,30 +18,26 @@ buttonLetsCook.addEventListener('click', renderDish)
 
 // }
 
-function renderDish(event) {
-  event.preventDefault()
-  console.log('should be an array of all the inputs',buttonRadios)
-  hide(imagePot);
-  // getRandomIndex()
-  var selected;
-for (var i = 0; i < buttonRadios.length; i++) {
- 
-  // console.log(buttonRadios[i].checked)
-  if (buttonRadios[i].checked === true) {
-    // if name of the radio is checked the var selected
-    //gets gets assigned the value(name) of that button.
-    selected = buttonRadios[i].value 
-    console.log(selected);
-    findDish(selected)
-
-  }
-
 function insertDish(dishToRender) {
   boxShowDish.innerHTML = ''
 boxShowDish.insertAdjacentHTML('afterbegin', 
 `<div>
   <h5 class='should-make'>You Should Make:</h5>
   <h2>${dishToRender}!</h2>
+</div>
+`
+)
+}
+
+
+function renderEntireMeal(mainToRender, sideToRender, dessertToRender) {
+boxShowDish.innerHTML = ''
+boxShowDish.insertAdjacentHTML('afterbegin',
+`<div>
+  <h5 class='should-make'>You Should Make:</h5>
+  <h2>${mainToRender} with a side of</h2>
+  <h2>${sideToRender} and </h2>
+  <h2>${dessertToRender} for dessert!</h2>
 </div>
 `
 )
@@ -59,9 +55,30 @@ function findDish(dishToSearch) {
    dish = getRandomDish(desserts)     
    insertDish(dish)
   } else {
-    alert('configure entire meal')
+    var main = getRandomDish(mains)
+    var side = getRandomDish(sides)
+    var dessert = getRandomDish(desserts)
+    renderEntireMeal(main, side, dessert)
   }
 }
+
+function renderDish(event) {
+  event.preventDefault()
+  console.log('should be an array of all the inputs',buttonRadios)
+  hide(imagePot);
+  // getRandomIndex()
+  var selected;
+for (var i = 0; i < buttonRadios.length; i++) {
+ 
+  // console.log(buttonRadios[i].checked)
+  if (buttonRadios[i].checked === true) {
+    // if name of the radio is checked the var selected
+    //gets gets assigned the value(name) of that button.
+    selected = buttonRadios[i].value 
+    console.log(selected);
+    findDish(selected)
+
+  }
   
 }
 
