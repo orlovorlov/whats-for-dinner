@@ -30,6 +30,7 @@ body {
 .button-add-recipe {
   height: 33px;
   border-radius: 5px;
+  margin-left: 1526px;
   
 }
 
@@ -63,6 +64,9 @@ body {
   margin: 87px;
 }
 
+.hidden {
+  display: none;
+}
 
 .input {
   display: flex;
@@ -89,7 +93,7 @@ body {
 .navBar {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   background-color: #0fb9b1;
   padding: 12px;
   height: 41px
@@ -113,6 +117,11 @@ body {
 .required:after {
   content:" *";
   color: red;
+}
+
+.should-make {
+  display: flex;
+  justify-content: center;
 }
 
 .box2 {
